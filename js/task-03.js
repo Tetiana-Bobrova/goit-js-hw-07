@@ -18,6 +18,6 @@ const imagesListEl = document.querySelector('#gallery');
 const createGallery = images.map(({ url, alt}) =>
   `<li><img src = "${url}" alt = "${alt}" width = "450" height = "400" /></li>`
   );
-
+ 
 imagesListEl.insertAdjacentHTML("beforeend", createGallery.join('  '));
 imagesListEl.setAttribute("style", "list-style:none; display: flex; justify-content: space-around; margin: 10px; padding: 0;");
