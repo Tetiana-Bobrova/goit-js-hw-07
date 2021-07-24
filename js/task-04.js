@@ -6,13 +6,13 @@ let counterValue = Number(currentValue.textContent);
 incrementBtn.addEventListener('click', increment);
 decrementBtn.addEventListener('click', decrement);
 
-function increment() {
+function increment(event) {
     counterValue += 1;
     currentValue.textContent = counterValue;
 
 }
 
-function decrement() {
+function decrement(event) {
     counterValue -= 1;
     currentValue.textContent = counterValue;
 
