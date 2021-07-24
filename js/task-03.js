@@ -21,3 +21,4 @@ const createGallery = images.map(({ url, alt }) =>
 
 imagesListEl.insertAdjacentHTML("beforeend", createGallery.join('  '));
 imagesListEl.setAttribute("style", "list-style:none; display: flex; justify-content: space-around; margin: 10px; padding: 0;");
+
